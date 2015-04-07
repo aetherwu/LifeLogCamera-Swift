@@ -40,7 +40,6 @@ class ViewController: UIViewController
         cm.resumeCaptureSession()
         cm.capturePictureWithCompletition {
             image, error in
-            println("print")
             
             if self.respondsToSelector("uploadViaWiFi:") {
                 NSThread.detachNewThreadSelector(Selector("uploadViaWiFi:"), toTarget: self, withObject: image)
