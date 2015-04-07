@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		54CC310BE53D93CF6C71FE22 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942519D74488BB61A55096A1 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D762FDCF1AD3C1E600EB3A30 /* ViewController+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762FDCE1AD3C1E600EB3A30 /* ViewController+Brightness.swift */; };
+		D762FDD11AD3CE5300EB3A30 /* ViewController+WiFiUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762FDD01AD3CE5300EB3A30 /* ViewController+WiFiUpload.swift */; };
 		D776CE7B1AD1345000547AD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776CE7A1AD1345000547AD1 /* AppDelegate.swift */; };
 		D776CE7D1AD1345000547AD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776CE7C1AD1345000547AD1 /* ViewController.swift */; };
 		D776CE801AD1345000547AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D776CE7E1AD1345000547AD1 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		93049D5882844EBA58680824 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		942519D74488BB61A55096A1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D762FDCE1AD3C1E600EB3A30 /* ViewController+Brightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Brightness.swift"; sourceTree = "<group>"; };
+		D762FDD01AD3CE5300EB3A30 /* ViewController+WiFiUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+WiFiUpload.swift"; sourceTree = "<group>"; };
 		D776CE751AD1345000547AD1 /* LifeLogCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeLogCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D776CE791AD1345000547AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D776CE7A1AD1345000547AD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				D776CE7A1AD1345000547AD1 /* AppDelegate.swift */,
 				D776CE7C1AD1345000547AD1 /* ViewController.swift */,
+				D762FDD01AD3CE5300EB3A30 /* ViewController+WiFiUpload.swift */,
 				D762FDCE1AD3C1E600EB3A30 /* ViewController+Brightness.swift */,
 				D776CE7E1AD1345000547AD1 /* Main.storyboard */,
 				D776CE811AD1345000547AD1 /* Images.xcassets */,
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D762FDD11AD3CE5300EB3A30 /* ViewController+WiFiUpload.swift in Sources */,
 				D776CE7D1AD1345000547AD1 /* ViewController.swift in Sources */,
 				D776CE7B1AD1345000547AD1 /* AppDelegate.swift in Sources */,
 				D762FDCF1AD3C1E600EB3A30 /* ViewController+Brightness.swift in Sources */,
