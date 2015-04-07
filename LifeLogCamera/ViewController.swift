@@ -21,9 +21,10 @@ class ViewController: UIViewController {
         cm.cameraOutputMode = .StillImage
         cm.cameraOutputQuality = .Low
         cm.flashMode = .Off
+        cm.writeFilesToPhoneLibrary = true
     
         timer = NSTimer.scheduledTimerWithTimeInterval(
-            10.0,
+            30.0,
             target: self,
             selector: Selector("tick:"),
             userInfo: nil,
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
         cm.resumeCaptureSession()
         cm.capturePictureWithCompletition {
             image, error in
-            println(image)
+            println("print")
             self.cm.stopAndRemoveCaptureSession()
         }
     }
