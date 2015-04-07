@@ -9,8 +9,8 @@
 import UIKit
 import CameraManager
 
-class ViewController: UIViewController {
-    
+class ViewController: UIViewController
+{    
     let cm = CameraManager.sharedInstance
     var timer: NSTimer?
     
@@ -32,6 +32,11 @@ class ViewController: UIViewController {
     }
     
     func tick(timer: NSTimer) {
+        // Capture only when it's dimmed.
+        if view.alpha != kMinimumAlpha {
+            return
+        }
+        
         cm.resumeCaptureSession()
         cm.capturePictureWithCompletition {
             image, error in
