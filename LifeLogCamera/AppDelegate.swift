@@ -12,9 +12,23 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var originalBrightness: CGFloat = 0.01
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         return true
+    }
+    
+    func applicationDidBecomeActive(application: UIApplication) {
+        originalBrightness = UIScreen.mainScreen().brightness
+        UIScreen.mainScreen().brightness = 0.01
+    }
+    
+    func applicationWillResignActive(application: UIApplication) {
+        UIScreen.mainScreen().brightness = originalBrightness
+    }
+    
+    func applicationWillTerminate(application: UIApplication) {
+        UIScreen.mainScreen().brightness = originalBrightness
     }
 
 }
