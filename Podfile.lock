@@ -1,10 +1,16 @@
 PODS:
+  - Alamofire (1.1.4)
   - CameraManager (1.0.12)
+  - MultiParty (0.1.6)
 
 DEPENDENCIES:
+  - Alamofire (~> 1.1)
   - CameraManager (~> 1.0)
+  - MultiParty (~> 0.1)
 
 SPEC CHECKSUMS:
+  Alamofire: 6a2cbaebe78a6d469bc55ee37f0a24ba22af76ac
   CameraManager: 06c18206fd9b473a0476fab9010d86337aaed574
+  MultiParty: 42ba7ec046025e1a95b6bd1ebb78c8dccb6ccc57
 
 COCOAPODS: 0.36.3
